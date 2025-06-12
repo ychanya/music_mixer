@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mixer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+</head>
+
+<body
+    class="flex flex-row items-center justify-center bg-gradient-to-b from-[#FFBEA5] from-0% via-[#AB5837] via-60% to-[#5F301E] to-100%">
+    <section class="w-2/5 h-screen flex items-center justify-center">
+        <div class="relative w-72 h-72 -left-[50px]">
+            <img src=" images/jay chou.jpeg" alt="jay chou" class="h-full w-full rounded-[10px] absolute z-10">
+            <img id="musicDisc" src="images/vinyl.png" alt="vinyl"
+                class="h-full w-full absolute transform translate-x-[145px] z-0 transition-transform duration-700 ease-in-out">
+        </div>
+    </section>
+
+    <main class="w-3/5 h-screen bg-[#251A15] justify-items-center content-center">
+        <h1 class="text-white font-[Damion] text-7xl mb-10">Music Mixer</h1>
+        <section class="flex flex-row space-x-[41px] items-center">
+            <object id="recordPlayer" type="image/svg+xml" data="images/record player.svg"
+                class="w-[443px] h-[333px] rounded-[10px]"></object>
+            <div
+                class="instruments bg-[#532D1D] w-[80px] h-[407px] rounded-[15px] space-y-[12px] justify-items-center content-center">
+                <div id="drum_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="drum" src="images/drums_icon.png" alt="drum" draggable="true">
+                </div>
+                <div id="guitar_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="guitar" src="images/guitar_icon.png" alt="guitar" draggable="true">
+                </div>
+                <div id="string_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="string" src="images/strings_icon.png" alt="string" draggable="true">
+                </div>
+                <div id="piano_base_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="piano_base" src="images/piano_base_icon.png" alt="piano_base" draggable="true">
+                </div>
+                <div id="piano_1_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="piano_1" src="images/piano_1_icon.png" alt="piano_1" draggable="true">
+                </div>
+                <div id="piano_2_container" class="instrument-icon bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
+                    <img id="piano_2" src="images/piano_2_icon.png" alt="piano_2" draggable="true">
+                </div>
+            </div>
+        </section>
+
+        <section id="mixer-board" class="flex flex-row space-x-[76px] mt-10 items-center">
+            <div
+                class="bg-[#532D1D] w-[407px] h-[80px] rounded-[15px] flex flex-row items-center justify-center space-x-[12px]">
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+                <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
+            </div>
+            <div class="space-y-2">
+                <!-- <div class="bg-[#532D1D] w-[53px] h-[50px] rounded-[25px] flex items-center justify-center">
+                    <button id="playButton" class="bg-[#D0B4A9] w-[34px] h-[34px] rounded-[15px]">
+                        <img src="images/play.png" alt="play">
+                    </button>
+                </div> -->
+                <div class="bg-[#532D1D] w-[53px] h-[50px] rounded-[25px] flex items-center justify-center">
+                    <button id="resetButton" class="bg-[#D0B4A9] w-[34px] h-[34px] rounded-[15px]">
+                        <img src="images/reset.png" alt="reset">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="drum_track" src="assets/drum.mp3" loop></audio>
+    <audio id="guitar_track" src="assets/guitar.mp3" loop></audio>
+    <audio id="string_track" src="assets/string.mp3" loop></audio>
+    <audio id="piano_base_track" src="assets/piano_base.mp3" loop></audio>
+    <audio id="piano_1_track" src="assets/piano_1.mp3" loop></audio>
+    <audio id="piano_2_track" src="assets/piano_2.mp3" loop></audio>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
