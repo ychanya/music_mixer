@@ -19,7 +19,9 @@ This project is an interactive virtual record player that allows users to create
 * Tailwind CSS
 
 ## **How to Use**
-* Open index.html in your browser
+* Open project by Vscode
+
+* Install Live Server extention and click to Go Live to open project on browser
 
 * Drag an instrument image and drop it onto the record player
 
