@@ -11,21 +11,23 @@
 
 <body
     class="flex flex-row items-center justify-center bg-gradient-to-b from-[#FFBEA5] from-0% via-[#AB5837] via-60% to-[#5F301E] to-100%">
-    <section class="w-2/5 h-screen flex items-center justify-center">
-        <div class="relative w-72 h-72 -left-[50px]">
+    <section class="w-2/5 h-screen flex items-center justify-center max-xl:hidden">
+        <div class="relative w-72 h-72 right-[50px]">
             <img src=" images/jay chou.jpeg" alt="jay chou" class="h-full w-full rounded-[10px] absolute z-10">
             <img id="musicDisc" src="images/vinyl.png" alt="vinyl"
                 class="h-full w-full absolute transform translate-x-[145px] z-0 transition-transform duration-700 ease-in-out">
         </div>
     </section>
 
-    <main class="w-3/5 h-screen bg-[#251A15] justify-items-center content-center">
-        <h1 class="text-white font-[Damion] text-7xl mb-10">Music Mixer</h1>
-        <section class="flex flex-row space-x-[41px] items-center">
+    <main class="w-full xl:w-3/5 h-screen bg-[#251A15] flex flex-col items-center justify-center">
+
+        <h1 class="text-white font-[Damion] text-7xl max-md:text-6xl mb-10">Music Mixer</h1>
+        <section class="flex flex-col items-center md:flex-row md:space-x-[40px]">
             <object id="recordPlayer" type="image/svg+xml" data="images/record player.svg"
-                class="w-[443px] h-[333px] rounded-[10px]"></object>
+                class="rounded-[10px] w-fit h-[233px] md:w-[443px] md:h-[333px]"></object>
             <div
-                class="instruments bg-[#532D1D] w-[80px] h-[407px] rounded-[15px] space-y-[12px] justify-items-center content-center">
+                class="instruments bg-[#532D1D] w-fit h-[80px] mt-10 p-2 rounded-[15px] flex flex-row items-center justify-center space-x-3 md:w-[80px] md:h-[407px] md:flex-col md:space-y-3 md:space-x-0 md:mt-0">
+
                 <div id="drum_container" class="bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]">
                     <img id="drum" src="images/drums_icon.png" alt="drum" draggable="true">
                 </div>
@@ -47,9 +49,9 @@
             </div>
         </section>
 
-        <section id="mixer-board" class="flex flex-row space-x-[76px] mt-10 items-center">
+        <section id="mixer-board" class="flex flex-row md:space-x-[76px] mt-10 items-center">
             <div
-                class="bg-[#532D1D] w-[407px] h-[80px] rounded-[15px] flex flex-row items-center justify-center space-x-[12px]">
+                class="bg-[#532D1D] w-fit h-[80px] rounded-[15px] p-2 flex flex-row items-center justify-center space-x-3 md:w-[407px]">
                 <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
                 <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
                 <div class="drop-zone bg-[#D0B4A9] w-[50px] h-[50px] rounded-[15px]"></div>
@@ -63,7 +65,8 @@
                         <img src="images/play.png" alt="play">
                     </button>
                 </div> -->
-                <div class="bg-[#532D1D] w-[53px] h-[50px] rounded-[25px] flex items-center justify-center">
+                <div
+                    class="bg-[#532D1D] w-[53px] h-[50px] rounded-[25px] flex items-center justify-center max-md:absolute max-md:top-10 max-md:right-10 h-10">
                     <button id="resetButton" class="bg-[#D0B4A9] w-[34px] h-[34px] rounded-[15px]">
                         <img src="images/reset.png" alt="reset">
                     </button>
