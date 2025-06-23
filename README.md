@@ -40,8 +40,15 @@ Here is a sample of the music mixer project UI:
 Created on February 11, 2025
 
 ## **Credits**
-1. Chanya Chumdee
-2. Qihong Liu
+### 👨‍💻 Development
+- **Chanya Chumdee** 
+- **Qihong Liu** 
+
+### 🎵 Audio
+- Music composed by **Gabriel Valcanaia** using GarageBand.
+
+### 🎨 Design Assets
+- Record player illustration by [macrovector](https://www.freepik.com/author/macrovector) from [Freepik](https://www.freepik.com), used under the Freepik Free License (requires attribution).
 
 ## **License**
 MIT
