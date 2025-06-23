@@ -34,7 +34,7 @@
 	</g>
 	<circle style="fill:#F5F5F5;" cx="250" cy="225" r="7.5"/>
 </g>
-<g id="Tone_arm">
+<g id="Tone_arm" style="transform: rotate(0deg); transform-origin: 505px 95px; transition: transform 0.5s ease;">
 	<circle style="fill:#2C2C2E;" cx="505" cy="95" r="50"/>
 	
 	<path style="fill:#949494;" d="M477.084,404.48l-16.681-15.936l-4.145,4.338l16.681,15.936c1.198,1.145,3.097,1.101,4.241-0.097
